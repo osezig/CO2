@@ -1,11 +1,29 @@
 public class Main {
     public static void task1(String[] args) {
-        int clientOS = 1;
-        if (clientOS == 0) {
+        int monthNumber = 12;
 
-            System.out.println("Установите приложение для IOS по ссылке");
-        } else {
-            System.out.println("Установите приложение для Android по ссылке");
-        }
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("Зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("Весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("Лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Осень");
+                break;
+            default:   }
+        System.out.println("некорректный месяц");
     }
 }
