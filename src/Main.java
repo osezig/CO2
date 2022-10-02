@@ -1,11 +1,16 @@
 public class Main {
-    public static void task1(String[] args) {
-        int clientOS = 1;
-        if (clientOS == 0) {
+    public static void task4(String[] args) {
+        int deliveryDistanse = 95;
 
-            System.out.println("Установите приложение для IOS по ссылке");
-        } else {
-            System.out.println("Установите приложение для Android по ссылке");
+        int deliveryDays = 1;
+
+        if (deliveryDistanse > 20) {
+            deliveryDays++;
+        }
+        if (deliveryDistanse > 60) {
+            deliveryDays++;
+
+            System.out.println("Потребуется дней: " + deliveryDays);
         }
     }
 }
