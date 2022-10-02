@@ -1,11 +1,22 @@
 public class Main {
     public static void task1(String[] args) {
         int clientOS = 1;
-        if (clientOS == 0) {
+        int clientDeviceYear = 2020;
 
-            System.out.println("Установите приложение для IOS по ссылке");
+        if (clientOS == 0) {
+            if (clientDeviceYear < 2015) {
+                System.out.println("Установите облегченную версию приложения для IOS по ссылке");
+            } else {
+                System.out.println("Установите версию приложения для IOS по ссылке");
+            }
         } else {
-            System.out.println("Установите приложение для Android по ссылке");
+            if (clientOS == 0) {
+                if (clientDeviceYear < 2015) {
+                    System.out.println("Установите облегченную версию приложения для Android по ссылке");
+                } else {
+                    System.out.println("Установите версию приложения для Android по ссылке");
+                }
+            }
         }
     }
 }
